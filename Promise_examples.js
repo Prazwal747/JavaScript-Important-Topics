@@ -63,7 +63,7 @@ function watchTutorialCallBack(callback , errorCallback){
     }
 }
 
-watchTutorialCallBack((message)=>{console.log('Success: ' + message)} ,
+watchTutorialCallBack((message)=>{console.log('Success: ' + message)},
 (error)=> { console.log(error.name + " " +error.message) })
 
 //lets write the above code (callback) into promises;
