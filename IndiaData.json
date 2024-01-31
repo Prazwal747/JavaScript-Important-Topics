@@ -1,0 +1,28 @@
+{
+  "states": [
+    {
+      "name": "Maharashtra",
+      "capital": "Mumbai",
+      "population": 112372972,
+      "majorCities": ["Pune", "Nagpur", "Nashik"]
+    },
+    {
+      "name": "Tamil Nadu",
+      "capital": "Chennai",
+      "population": 77841267,
+      "majorCities": ["Coimbatore", "Madurai", "Trichy"]
+    },
+    {
+      "name": "Karnataka",
+      "capital": "Bengaluru",
+      "population": 67562686,
+      "majorCities": ["Mysuru", "Hubballi", "Mangalore"]
+    },
+    {
+      "name": "Uttar Pradesh",
+      "capital": "Lucknow",
+      "population": 224979000,
+      "majorCities": ["Kanpur", "Agra", "Varanasi"]
+    }
+  ]
+}

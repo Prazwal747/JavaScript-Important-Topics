@@ -1,4 +1,4 @@
-//promise in javascript basic example and syntax 
+//promise in javascript basic example and syntax
 //promise is an object so you have to make a new object of promise to use it
 
 let filePresent = false;
@@ -45,26 +45,30 @@ fetchData()
 let userLeft = false;
 let userWatchingCatmeme = true;
 
-function watchTutorialCallBack(callback , errorCallback){
-    if(userLeft){
-        errorCallback( {
-            name: 'user left',
-            message: ':('
-        } )
-    }
-    else if(userWatchingCatmeme){
-        errorCallback({
-            name: 'user watching cat meme',
-            message: 'WebDevSimplified < cat'
-        })
-    }
-    else{
-        callback('Successsss... suiiii');
-    }
+function watchTutorialCallBack(callback, errorCallback) {
+  if (userLeft) {
+    errorCallback({
+      name: "user left",
+      message: ":(",
+    });
+  } else if (userWatchingCatmeme) {
+    errorCallback({
+      name: "user watching cat meme",
+      message: "WebDevSimplified < cat",
+    });
+  } else {
+    callback("Successsss... suiiii");
+  }
 }
 
-watchTutorialCallBack((message)=>{console.log('Success: ' + message)},
-(error)=> { console.log(error.name + " " +error.message) })
+watchTutorialCallBack(
+  (message) => {
+    console.log("Success: " + message);
+  },
+  (error) => {
+    console.log(error.name + " " + error.message);
+  }
+);
 
 //lets write the above code (callback) into promises;
 
