@@ -34,3 +34,25 @@ const anotherPerson = {...person,...{
 }}
 
 console.log(`old object is : ${person} \n new object is ${anotherPerson} `);
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+const animal = {}
+
+Object.defineProperty(animal,"name",{
+    value:"Cat",
+    writable: false
+});
+console.log(animal.name);
+
+Object.defineProperty(animal,"date",{
+    get() {
+        return new Date();
+    }
+})
+
+console.log(animal.date);
