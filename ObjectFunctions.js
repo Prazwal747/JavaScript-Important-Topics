@@ -56,3 +56,16 @@ Object.defineProperty(animal,"date",{
 })
 
 console.log(animal.date);
+
+//defineProperty in 3rd argument where we define descriptor that is properties we can also define function , and inside descriptor we can use value, writable or get, set 
+// here we can only use get to return a function , and set to set something , 
+
+Object.defineProperty(animal,"demoFunction",{
+    get(){
+        return function demo(){
+            console.log("You just hit this function");
+        }
+    }
+})
+
+animal.demoFunction();
