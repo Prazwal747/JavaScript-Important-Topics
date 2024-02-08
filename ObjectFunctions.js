@@ -69,3 +69,37 @@ Object.defineProperty(animal,"demoFunction",{
 })
 
 animal.demoFunction();
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+const weather = {
+    loacation:"Banglore",
+    temp:35,
+    wind: "12kn west"
+}
+
+const array = Object.entries(weather);   //entries method is used to return array from object it returns multi dimensional array;
+console.log(array);
+
+
+const samagri = [['apple',5],['orange',6],['cherry',10]];
+
+const samagriObject  = Object.fromEntries(samagri); //fromEntries method is used to convert multiDim array to object , it return object from an array passed
+
+console.log(samagriObject);
+
+
+/*-------------------------------------------*/
+/*  we can also also make object immutbale that is we cant delete , add or reassign by using freeze method */
+
+const sampleObject = {
+    name:"prajwal",
+    age:21,
+    college:"dropout"
+}
+
+Object.freeze(sampleObject);
+delete sampleObject.name;
+
+console.log(sampleObject);  //property will not be deleted
